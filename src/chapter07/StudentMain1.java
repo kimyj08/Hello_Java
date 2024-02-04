@@ -17,7 +17,7 @@ public class StudentMain1 {
 		System.out.println(stu2.department);
 		
 		// 기본 생성자로 객체 생성
-		Student stu0 = new Student(); // 에러 발생
+//		Student stu0 = new Student(); // 에러 발생
 
 	}
 

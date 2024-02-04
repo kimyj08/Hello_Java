@@ -20,7 +20,7 @@ public class LocalValEx {
 			temp += i;
 		}
 		
-		System.out.println(temp); // 에러
+//		System.out.println(temp); // 에러
 
 	}
 
