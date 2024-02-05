@@ -13,4 +13,9 @@ public class Student {
 		department = d;
 	}
 	
+	// 기본 생성자
+	Student() {
+		
+	}
+	
 }
