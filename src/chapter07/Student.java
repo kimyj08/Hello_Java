@@ -45,4 +45,10 @@ public class Student {
 		department = d;
 	}
 	
+//	// 학과와 학년을 매개변수로 받는 생성자 (에러 발생) : 3번 생성자와 매개변수명은 분명히 다르지만 매개변수 타입과 순서가 완전히 동일하기 때문에 에러 발생.
+//	Student(String d, int g) {
+//		department = d;
+//		grade = g;
+//	}
+	
 }
