@@ -22,16 +22,16 @@ public class InitEx2 {
 		sMethod(); // static 메서드
 		
 		// 에러(인스턴스 변수, 메서드 사용 불가)
-		var = 0; // 인스턴스 변수
-		method(); // 인스턴스 메서드
+//		var = 0; // 인스턴스 변수
+//		method(); // 인스턴스 메서드
 	}
 	
 	// static 메서드
 	static void sMethod2() {
 		
 		// 에러(static 메서드에서 this 키워드 사용불가)
-		this.sVar = 0; // static 변수
-		this.sMethod(); // static 메서드
+//		this.sVar = 0; // static 변수
+//		this.sMethod(); // static 메서드
 	}
 
 }
