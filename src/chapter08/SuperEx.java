@@ -20,7 +20,7 @@ class Parent {
 }
 
 class Child extends Parent {
-	int number = 2;
+	// int number = 2;
 	
 	Child() {
 		System.out.println("자식 객체 생성");
