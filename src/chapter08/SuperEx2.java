@@ -14,6 +14,7 @@ class Parent2 {
 	
 }
 
-class Child extends Parent2 { // 에러 발생
+class Child2 extends Parent2 {
+	
 	
 }
