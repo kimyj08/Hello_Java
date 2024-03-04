@@ -2,7 +2,7 @@ package chapter08.pkg1;
 
 public class Aclass {
 
-	protected String vatA;
+	protected String varA;
 	String varA2;
 	
 	protected void methodA() {
