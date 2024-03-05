@@ -6,9 +6,9 @@ public class Cclass extends Aclass {
 	
 	Cclass() {
 		this.varA = "varA"; // 사용 가능
-		this.varA2 = "varA2"; // 사용 불가
+//		this.varA2 = "varA2"; // 사용 불가
 		this.methodA(); // 사용 가능
-		this.methodA2(); // 사용 불가
+//		this.methodA2(); // 사용 불가
 	}
 
 }
