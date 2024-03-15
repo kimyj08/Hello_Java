@@ -15,4 +15,9 @@ public interface InterfaceEx {
 		return price - (price * 0.05);
 	}
 	
+	// static 메서드
+	static void printPrice(double price) {
+		System.out.println(price);
+	}
+	
 }
