@@ -10,4 +10,9 @@ public interface InterfaceEx {
 	public double meanPrice();
 	public double totalPrice();
 	
+	// default 메서드 (구현부 작성)
+	default double getSalePrice(double price) {
+		return price - (price * 0.05);
+	}
+	
 }
