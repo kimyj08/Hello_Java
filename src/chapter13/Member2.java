@@ -1,6 +1,6 @@
 package chapter13;
 
-public class Member2 implements Comparable{
+public class Member2 implements Comparable {
 	
 	// 필드
 	String name;
