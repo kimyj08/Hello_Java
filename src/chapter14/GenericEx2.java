@@ -20,10 +20,34 @@ public class GenericEx2 {
 		
 		// String 제네릭 타입의 매개변수에 Integer 배열객체 전달
 		// gen.set(ii); // 에러 발생
-		Generic<String> gen2 = new Generic<Integer>();
+		Generic<Integer> gen2 = new Generic<Integer>();
 		gen2.set(ii);
 		gen2.print();
+		
+		for (Integer o : gen2.get()) {
+			// String s = (String)o; // 형변환 필요없음
+			System.out.println(o);
+		}
 
 	}
 
+}
+
+class Generic<T> {
+	T[] v;
+	
+	void set(T[] n) {
+		v = n;
+	}
+	
+	T[] get() {
+		return v;
+	}
+	
+	void print() {
+		for (T o : v) {
+			System.out.print(o + " ");
+		}
+		System.out.println();
+	}
 }
