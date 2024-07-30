@@ -18,7 +18,12 @@ public class StreamCollect {
 		
 		// 요소가 Rectangle 객체인 경우 collect 메서드로 List로 변환
 		List<Shape> rectList = list.stream().filter(s -> s instanceof Rectangle).collect((Collectors.toList()));
+		rectList.stream().forEach(f -> System.out.println(f));
+		System.out.println();
 		
+		// 요소가 Rectangle 객체인 경우 collect 메서드로 Set으로 변환
+		Set<Shape> rectSet = list.stream().filter(s -> s instanceof Rectangle).collect((Collectors.toSet()));
+		rectSet.stream().forEach(f -> System.out.println(f));
 
 	}
 
