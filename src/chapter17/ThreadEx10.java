@@ -29,7 +29,7 @@ class SmartPhoneGame {
 		return this.level;
 	}
 	
-	public void increaseLevel() {
+	public synchronized void increaseLevel() {
 		while(true) {
 			this.level++; // 레벨 1씩 증가
 			try {
