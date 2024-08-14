@@ -41,7 +41,7 @@ class YieldThread extends Thread {
 	public void run() {
 		while(!isBreak) {
 			if(isContinue) {
-				System.out.println(getName()+"실행 중");
+				System.out.println(getName()+" 실행 중");
 			} else {
 				Thread.yield();
 			}
