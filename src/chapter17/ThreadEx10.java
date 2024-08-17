@@ -29,19 +29,24 @@ class SmartPhoneGame {
 		return this.level;
 	}
 	
-	public void increaseLevel() {
-		synchronized(this) {
-			while(true) {
-				this.level++; // 레벨 1씩 증가
+	public synchronized void increaseLevel() {
+		while(true) {
+			this.level++; // 레벨 1씩 증가
+			try {
+				Thread.sleep(1000);
+			} catch(InterruptedException e) {}
+			// 현재 스레드의 이름과 레벨 출력
+			System.out.println(Thread.currentThread().getName()+" Level : "+this.level);
+			if (this.level == 5) {
+				notifyAll();
 				try {
-					Thread.sleep(1000);
-				} catch(InterruptedException e) {}
-				// 현재 스레드의 이름과 레벨 출력
-				System.out.println(Thread.currentThread().getName()+" Level : "+this.level);
-				
-				// 레벨이 10의 배수가 되면 종료
-				if(this.level % 10 == 0) break;
+					wait();
+				} catch (InterruptedException e) {}
+				break;
 			}
+			
+			// 레벨이 10의 배수가 되면 종료
+			if(this.level % 10 == 0) break;
 		}
 	}
 }
